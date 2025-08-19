@@ -1,5 +1,9 @@
-class Solution:
-    import sys
-    sys.set_int_max_str_digits(1000000) 
-    def addStrings(self, num1: str, num2: str) -> str:
+class Solution(object):
+    def addStrings(self, num1, num2):
+        """
+        :type num1: str
+        :type num2: str
+        :rtype: str
+        """
         return str(int(num1)+int(num2))
+        
