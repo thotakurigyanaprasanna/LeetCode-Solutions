@@ -1,9 +1,5 @@
-class Solution(object):
-    def removeDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
         d={}
         i=0
         while i<len(nums):
@@ -12,5 +8,4 @@ class Solution(object):
             else:
                 d[nums[i]]=1
                 i+=1
-        return len(nums)
-
+        return len(nums) 
